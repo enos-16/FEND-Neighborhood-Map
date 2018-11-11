@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://enos-16.github.io/FEND-Neighborhood-Map/",
 	"dependencies": {
+		"@material-ui/core": "^3.4.0",
 		"google-maps-react": "^2.0.2",
 		"react": "^16.6.0",
 		"react-dom": "^16.6.0",
