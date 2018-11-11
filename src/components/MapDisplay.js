@@ -22,13 +22,6 @@ class MapDisplay extends Component {
     this.updateMarkers(this.props.locations);
   };
 
-  getBusinessInfo = (props, data) => {
-    // looks and compares Foursquare data agains our dataset
-    return data.response.venues.filter(
-      item => item.name.includes(props.name) || props.name.includes(item.name)
-    );
-  };
-
   onMarkerClick = (props, marker, e) => {
     this.onMarkerClose();
 
@@ -65,7 +58,7 @@ class MapDisplay extends Component {
             .then(result => {
               activeMarkerProps = {
                 ...activeMarkerProps,
-                images: result.response.photo
+                images: result.response.photos
               };
               if (this.state.activeMarker) {
                 this.setState({
@@ -91,6 +84,13 @@ class MapDisplay extends Component {
       activeMarker: marker,
       showingInfoWindow: true
     });
+  };
+
+  getBusinessInfo = (props, data) => {
+    // looks and compares Foursquare data agains our dataset
+    return data.response.venues.filter(
+      item => item.name.includes(props.name) || props.name.includes(item.name)
+    );
   };
 
   onMarkerClose = () => {
