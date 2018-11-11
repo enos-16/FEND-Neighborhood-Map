@@ -40,6 +40,7 @@ class ListDrawer extends Component {
     this.setState({
       search: newSearch
     });
+    this.props.filterLocations(newSearch);
   };
 
   render = () => {

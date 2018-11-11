@@ -16,6 +16,37 @@ class MapDisplay extends Component {
     showingInfoWindow: false
   };
 
+  /* componentWillReceiveProps = props => {
+    // Change in the number of locations, so update the markers
+    if (this.state.markers.length !== props.locations.length) {
+      this.onMarkerClose();
+      this.updateMarkers(props.locations);
+      this.setState({ activeMarker: null });
+
+      return;
+    }
+
+    // The selected item is not the same as the active marker, so close the info window
+    if (
+      !props.selectedIndex ||
+      (this.state.activeMarker &&
+        this.state.markers[props.selectedIndex] !== this.state.activeMarker)
+    ) {
+      this.onMarkerClose();
+    }
+
+    // Make sure there's a selected index
+    if (props.selectedIndex === null) {
+      return;
+    }
+
+    // Treat the marker as clicked
+    this.onMarkerClick(
+      this.state.markerProps[props.selectedIndex],
+      this.state.markers[props.selectedIndex]
+    );
+  }; */
+
   mapReady = (props, map) => {
     // Sets map state and preps for marker location
     this.setState({ map });

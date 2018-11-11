@@ -31,10 +31,32 @@ class App extends Component {
     }
   };
 
+  componentDidMount = () => {
+    this.setState({
+      ...this.state,
+      filtered: this.filterLocations(this.state.all, "")
+    });
+  };
+
   toggleDrawer = () => {
     // toggle the drawer list open/closed
     this.setState({
       open: !this.state.open
+    });
+  };
+
+  updateSearch = search => {
+    //update search
+    this.setState({
+      ...this.state,
+      selectedIndex: null,
+      filtered: this.filterLocations(this.state.all, search)
+    });
+  };
+
+  filterLocations = (locations, search) => {
+    return locations.filter(location => {
+      return location.name.toLowerCase().includes(search.toLowerCase());
     });
   };
 
@@ -51,12 +73,13 @@ class App extends Component {
           lat={this.state.lat}
           lng={this.state.lng}
           zoom={this.state.zoom}
-          locations={this.state.all}
+          locations={this.state.filtered}
         />
         <ListDrawer
-          locations={this.state.all}
+          locations={this.state.filtered}
           open={this.state.open}
           toggleDrawer={this.toggleDrawer}
+          filterLocations={this.updateSearch}
         />
       </div>
     );
