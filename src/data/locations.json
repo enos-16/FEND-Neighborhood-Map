@@ -1,0 +1,134 @@
+[
+	{
+		"name": "Altus Cafe",
+		"street": "4325 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "https://altus-cafe.business.site",
+		"pos": {
+			"lat": 40.852379,
+			"lng": -73.93486639999999
+		}
+	},
+	{
+		"name": "Tampopo Ramen",
+		"street": "1 Bennett Ave",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "http://tampoporamennyc.com",
+		"pos": {
+			"lat": 40.850748,
+			"lng": -73.93627800000002
+		}
+	},
+	{
+		"name": "Manolo Tapas",
+		"street": "4165 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "http://manolotapas.net",
+		"pos": {
+			"lat": 40.8472141,
+			"lng": -73.93850789999999
+		}
+	},
+	{
+		"name": "Coogans",
+		"street": "4015 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10032",
+		"url": "http://www.coogans.com",
+		"pos": {
+			"lat": 40.841687,
+			"lng": -73.939728
+		}
+	},
+	{
+		"name": "Malecon",
+		"street": "4141 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "http://maleconrestaurants.com",
+		"pos": {
+			"lat": 40.846402,
+			"lng": -73.9386195
+		}
+	},
+	{
+		"name": "Saggio",
+		"street": "827 W 181st St",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "http://www.saggionyc.com",
+		"pos": {
+			"lat": 40.8514155,
+			"lng": -73.9395157
+		}
+	},
+	{
+		"name": "181 Cabrini",
+		"street": "854 W 181st St",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "http://181cabrininewyork.com",
+		"pos": {
+			"lat": 40.8511379,
+			"lng": -73.9399545
+		}
+	},
+	{
+		"name": "Kismat Restaurant and Bar",
+		"street": "603 Fort Washington Ave",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10040",
+		"url": "http://www.kismatindiannyc.com",
+		"pos": {
+			"lat": 40.8553122,
+			"lng": -73.9370321
+		}
+	},
+	{
+		"name": "Locksmith Bar",
+		"street": "4463 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10040",
+		"url": "https://www.locksmithbarnyc.com",
+		"pos": {
+			"lat": 40.8573807,
+			"lng": -73.9325659
+		}
+	},
+	{
+		"name": "La Casa Del Mofongo",
+		"street": "1447 St Nicholas Ave",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10033",
+		"url": "https://www.yelp.com/biz/la-casa-del-mofongo-new-york-2",
+		"pos": {
+			"lat": 40.8503954,
+			"lng": -73.9334181
+		}
+	},
+	{
+		"name": "Empanadas Monumental",
+		"street": "4093 Broadway",
+		"city": "New York",
+		"state": "NY",
+		"zip": "10032",
+		"url": "https://www.yelp.com/biz/empanadas-monumental-new-york-8",
+		"pos": {
+			"lat": 40.8445378,
+			"lng": -73.9391488
+		}
+	}
+]
