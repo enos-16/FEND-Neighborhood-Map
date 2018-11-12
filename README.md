@@ -27,4 +27,4 @@ To get this project running please follow the steps below:
 
 **Note: The this app was bootstrapped with create-react-app and the standard service worker has been enabled. However, this will only be available when running a production build, and will not function properly when running locally.**
 
-To view this site live vist it <a href="https://enos-16.github.io/FEND-MyReads/" target="_blank">here</a>.
+To view this site live vist it <a href="https://enos-16.github.io/FEND-Neighborhood-Map/" target="_blank">here</a>.
