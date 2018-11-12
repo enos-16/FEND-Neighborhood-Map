@@ -10,7 +10,9 @@ class App extends Component {
     lng: -73.93837019999999,
     zoom: 15,
     all: locations,
-    open: false
+    filtered: null,
+    open: false,
+    selectedIndex: null
   };
 
   styles = {
@@ -60,6 +62,13 @@ class App extends Component {
     });
   };
 
+  clickListItem = index => {
+    this.setState({
+      selectedIndex: index,
+      open: !this.state.open
+    });
+  };
+
   render = () => {
     return (
       <div className="App">
@@ -74,12 +83,14 @@ class App extends Component {
           lng={this.state.lng}
           zoom={this.state.zoom}
           locations={this.state.filtered}
+          clickListItem={this.clickListItem}
         />
         <ListDrawer
           locations={this.state.filtered}
           open={this.state.open}
           toggleDrawer={this.toggleDrawer}
           filterLocations={this.updateSearch}
+          clickListItem={this.clickListItem}
         />
       </div>
     );

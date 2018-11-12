@@ -16,7 +16,7 @@ class MapDisplay extends Component {
     showingInfoWindow: false
   };
 
-  /* componentWillReceiveProps = props => {
+  componentWillReceiveProps = props => {
     // Change in the number of locations, so update the markers
     if (this.state.markers.length !== props.locations.length) {
       this.onMarkerClose();
@@ -41,11 +41,7 @@ class MapDisplay extends Component {
     }
 
     // Treat the marker as clicked
-    this.onMarkerClick(
-      this.state.markerProps[props.selectedIndex],
-      this.state.markers[props.selectedIndex]
-    );
-  }; */
+  };
 
   mapReady = (props, map) => {
     // Sets map state and preps for marker location
