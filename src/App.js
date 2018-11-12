@@ -72,7 +72,7 @@ class App extends Component {
   render = () => {
     return (
       <div className="App">
-        <div>
+        <div style={this.styles.header}>
           <button onClick={this.toggleDrawer} style={this.styles.menuButton}>
             <i className="fa fa-bars" />
           </button>
@@ -83,7 +83,7 @@ class App extends Component {
           lng={this.state.lng}
           zoom={this.state.zoom}
           locations={this.state.filtered}
-          clickListItem={this.clickListItem}
+          selectedIndex={this.state.selectedIndex}
         />
         <ListDrawer
           locations={this.state.filtered}

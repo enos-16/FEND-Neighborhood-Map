@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow } from "google-maps-react";
 
-const GoogleKey = "AIzaSyCV3zAwq168vlzJtoIzFUA7Om3SXyPKUYA";
+const GOOGLE_KEY = "AIzaSyCV3zAwq168vlzJtoIzFUA7Om3SXyPKUYA";
 const CLIENT_ID = "1WUIYNKZCO5ABUOWXICQFFSY10JUWKFMRP3L5W2L3OOEFL3H";
 const CLIENT_SECRET = "4EW4HKTMV3O4AWG1DOM4VR4ZZDVRLW0XVGPPVI42NVYC1COU";
 const FS_V = 20180323;
@@ -41,6 +41,10 @@ class MapDisplay extends Component {
     }
 
     // Treat the marker as clicked
+    this.onMarkerClick(
+      this.state.markerProps[props.selectedIndex],
+      this.state.markers[props.selectedIndex]
+    );
   };
 
   mapReady = (props, map) => {
@@ -223,5 +227,5 @@ class MapDisplay extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: GoogleKey
+  apiKey: GOOGLE_KEY
 })(MapDisplay);
